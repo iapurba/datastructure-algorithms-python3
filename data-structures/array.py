@@ -18,10 +18,20 @@ class Array:
         self.length -= 1
         print(lastItem)
         return lastItem
+    def insert(self, index, item):
+        self._shift_item_to_rigth(index)
+        self.data[index] = item
 
-# fruits = Array()
-# fruits.append("apple")
-# fruits.append("mango")
-# fruits.append("grape")
+    def _shift_item_to_rigth(self, index):
+        for i in range(index, self.length):
+            self.data[i+1] = self.data[i]
+        self.length += 1
+
+fruits = Array()
+fruits.append("apple")
+fruits.append("mango")
+fruits.append("grape")
 # fruits.pop()
-# print("length =", fruits.length,"\ndata =", fruits.data)
+fruits.insert(1, 'banana')
+fruits.insert(2, 'peach')
+print("length =", fruits.length,"\ndata =", fruits.data)
