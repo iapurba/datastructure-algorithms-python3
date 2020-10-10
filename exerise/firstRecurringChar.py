@@ -3,7 +3,7 @@
 def first_recurring_character(inputList):
     itemDict = {}
     for item in inputList:
-        if itemDict.get(item, None) != None:
+        if item in itemDict:
             return item
         else:
             itemDict[item] = item
