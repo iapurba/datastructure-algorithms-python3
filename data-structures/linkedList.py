@@ -9,6 +9,7 @@ class LinkedList:
         self.tail = self.head
         self.length = 1
     def prepend(self, value):
+        """adds an item to the beginning of the linked list"""
         new_node = {
             'value': value,
             'next': self.head
@@ -16,6 +17,7 @@ class LinkedList:
         self.head = new_node
         self.length += 1
     def append(self, value):
+        """adds an item to the end of the linked list"""
         new_node = {
             'value': value,
             'next': None
