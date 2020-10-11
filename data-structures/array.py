@@ -27,6 +27,7 @@ class Array:
             self.data[i+1] = self.data[i]
         self.length += 1
 
+
 fruits = Array()
 fruits.append("apple")
 fruits.append("mango")
@@ -34,4 +35,4 @@ fruits.append("grape")
 # fruits.pop()
 fruits.insert(1, 'banana')
 fruits.insert(2, 'peach')
-print("length =", fruits.length,"\ndata =", fruits.data)
+print(fruits.length, fruits.data)
