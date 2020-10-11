@@ -82,8 +82,10 @@ class LinkedList:
             counter += 1
         return current_node
 
+#creating an object of LinkedList class
+my_linked_list = LinkedList(10)
+
 ## linked list operations
-# my_linked_list = LinkedList(10)
 # my_linked_list.prepend(6)
 # my_linked_list.prepend(22)
 # my_linked_list.append(26)
