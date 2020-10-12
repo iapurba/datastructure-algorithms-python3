@@ -8,11 +8,11 @@ class Stack1:
         self.length = 0
 
     def peek(self):
-        """Return the top item of the stack"""
+        """Returns the top item of the stack"""
         return self.top
 
     def push(self, value):
-        """Add a new element on top of the stack"""
+        """Adds a new element on top of the stack"""
         new_node = {
             'value': value,
             'next': None
@@ -27,7 +27,7 @@ class Stack1:
         return self
 
     def pop(self):
-        """Remove the top element from the stack"""
+        """Removes the top element from the stack"""
         if self.length == 0:
             return None
         elif self.length == 1:
@@ -45,7 +45,7 @@ class Stack1:
             return self
 
     def search(self, value):
-        """Return True if the given item exists in the stack, if not returns False"""
+        """Returns True if the given item exists in the stack, if not returns False"""
         current_node = self.top
         while(current_node):
             if current_node['value'] == value:
