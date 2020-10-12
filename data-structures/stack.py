@@ -8,11 +8,11 @@ class Stack1:
         self.length = 0
 
     def peek(self):
-        """Return top item of the stack"""
+        """Return the top item of the stack"""
         return self.top
 
     def push(self, value):
-        """Add new element on top of the stack"""
+        """Add a new element on top of the stack"""
         new_node = {
             'value': value,
             'next': None
@@ -65,16 +65,19 @@ class Stack2:
         self.stack = []
 
     def peek(self):
+        """Returns the last item from the stack"""
         length = len(self.stack)
         if length > 0:
             return self.stack[length - 1]
         return None
 
     def push(self, value):
+        """Adds a new item on top of the stack"""
         self.stack.append(value)
         return self
 
     def pop(self):
+        """Removes the top most item from the stack"""
         if len(self.stack) > 0:
             self.stack.pop()
             return self
@@ -95,7 +98,7 @@ website = Stack1()
 
 # instantiated Stack2 class
 books = Stack2()
-# 
+#
 # books.push("Rich Dad Poor Dad")
 # books.push("The Alchemist")
 # books.push("Think And Grow Rich")
