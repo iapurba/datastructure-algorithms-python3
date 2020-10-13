@@ -85,12 +85,13 @@ class LinkedList:
 #creating an object of LinkedList class
 my_linked_list = LinkedList(10)
 
-## linked list operations
-# my_linked_list.prepend(6)
-# my_linked_list.prepend(22)
-# my_linked_list.append(26)
-# my_linked_list.insert(2, 56)
-# my_linked_list.insert(4, 8)
-# my_linked_list.remove(11)
+# linked list operations
+my_linked_list.prepend(6)
+my_linked_list.prepend(22)
+my_linked_list.append(26)
+my_linked_list.insert(2, 56)
+my_linked_list.insert(4, 8)
+my_linked_list.remove(11)
 # print(my_linked_list.search(52))
-print(f"length: {my_linked_list.length}\nhead: {my_linked_list.head}\ntail: {my_linked_list.tail}")
+
+print(my_linked_list.__dict__) # print object as a dictionary
