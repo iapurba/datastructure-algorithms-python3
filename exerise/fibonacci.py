@@ -10,7 +10,7 @@ def fibonacciIterative(number):
 
 
 # Recursive Aproach
-# This is a bad aproach because time complexity is O(2^n)
+# This is not an ideal solution as time complexity is O(2^n)
 def fibonacciRecursive(number):
     #base case
     if number < 2:
