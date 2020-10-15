@@ -2,10 +2,9 @@
 
 # Recursive Aproach
 def factorialRecursive(num):
-    result = 1
     #base case
     if num <= 1:
-        return result
+        return 1
     return num * factorialRecursive(num - 1)
 
 
