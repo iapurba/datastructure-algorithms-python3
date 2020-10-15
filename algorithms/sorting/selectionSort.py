@@ -6,6 +6,7 @@ def selectionSort(items):
         min = i
         temp = items[i]
         for j in range(i+1, length):
+            #select index of smallest item
             if items[j] < items[min]:
                 min = j
         items[i] = items[min]
