@@ -51,6 +51,21 @@ class BinarySearchTree:
         return False
 
 
+    def breadth_first_search(self):
+        current_node = self.root
+        list = []
+        queue = [] # keeps track of current node of the tree
+        queue.append(current_node)
+        while len(queue) > 0:
+            current_node = queue.pop(0)
+            list.append(current_node['value'])
+            if current_node['left']:
+                queue.append(current_node['left'])
+            if current_node['rigth']:
+                queue.append(current_node['rigth'])
+        return list
+
+
 
 myBST = BinarySearchTree()
 
@@ -61,6 +76,11 @@ myBST.insert(49)
 myBST.insert(15)
 myBST.insert(40)
 myBST.insert(52)
-print(myBST.search(49)) # True
+print(myBST.breadth_first_search()) # [36, 22, 49, 15, 30, 40, 52]
 #printing BinarySearchTree object as a dictionary
-print(myBST.__dict__)
+# print(myBST.__dict__)
+#       36
+#       /\
+#    22    49
+#   /\      /\
+# 15  30  40  52
